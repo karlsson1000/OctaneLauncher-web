@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Atomic Launcher",
-  description: "Download Atomic Launcher",
+  title: "Octane Launcher",
+  description: "Download Octane Launcher",
 };
 
 export default function RootLayout({

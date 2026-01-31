@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const GITHUB_REPO = 'karlsson1000/AtomicLauncher';
+const GITHUB_REPO = 'karlsson1000/OctaneLauncher';
 const LATEST_RELEASE_API = `https://api.github.com/repos/${GITHUB_REPO}/releases/latest`;
 const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN || '';
 
@@ -16,7 +16,7 @@ interface Release {
   }>;
 }
 
-export default function AtomicLauncher() {
+export default function OctaneLauncher() {
   const [currentOS, setCurrentOS] = React.useState('');
   const [release, setRelease] = React.useState<Release | null>(null);
   const [loading, setLoading] = React.useState(true);
@@ -130,12 +130,12 @@ export default function AtomicLauncher() {
       {/* Logo and Title */}
       <div className="absolute top-3 sm:top-4 left-3 sm:left-4 flex items-center gap-2 pointer-events-none select-none z-10">
         <Image src="/logo.png" alt="Logo" width={24} height={24} priority className="w-5 h-5 sm:w-6 sm:h-6" />
-        <h1 className="text-white text-sm sm:text-base font-semibold">Atomic Launcher</h1>
+        <h1 className="text-white text-sm sm:text-base font-semibold">Octane Launcher</h1>
       </div>
 
       {/* GitHub Link */}
       <a
-        href="https://github.com/karlsson1000/AtomicLauncher"
+        href="https://github.com/karlsson1000/OctaneLauncher"
         target="_blank"
         rel="noopener noreferrer"
         className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10 text-white/60 hover:text-[#4572e3] transition-colors"
@@ -151,8 +151,8 @@ export default function AtomicLauncher() {
         <div className="mb-6 sm:mb-10 md:mb-14 pointer-events-none select-none w-full px-2 sm:px-4" style={{ perspective: "1200px" }}>
           <div style={{ transform: "rotateX(8deg) rotateZ(1deg)" }}>
             <Image
-              src="/atomiclauncher.png"
-              alt="Atomic Launcher"
+              src="/octanelauncher.png"
+              alt="Octane Launcher"
               width={1920}
               height={1080}
               priority

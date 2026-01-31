@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const GITHUB_REPO = 'karlsson1000/AtomicLauncher';
+const GITHUB_REPO = 'karlsson1000/OctaneLauncher';
 const RELEASES_API = `https://api.github.com/repos/${GITHUB_REPO}/releases`;
 const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN || '';
 
@@ -73,7 +73,7 @@ export default function Changelog() {
       {/* Logo and Title */}
       <Link href="/" className="absolute top-3 sm:top-4 left-3 sm:left-4 flex items-center gap-2 z-10 hover:opacity-80 transition-opacity cursor-pointer">
         <Image src="/logo.png" alt="Logo" width={24} height={24} priority className="w-5 h-5 sm:w-6 sm:h-6" />
-        <h1 className="text-white text-sm sm:text-base font-semibold">Atomic Launcher</h1>
+        <h1 className="text-white text-sm sm:text-base font-semibold">Octane Launcher</h1>
       </Link>
 
       {/* Content */}
